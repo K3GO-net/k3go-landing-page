@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { NFTIcons } from "@/src/assets/icon/NFTICons";
+import { DefaultLayout } from "@/src/layout/DefaultLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <DefaultLayout children={children} />
     </html>
   );
 }
