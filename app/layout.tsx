@@ -8,5 +8,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <DefaultLayout children={children} />;
+  return (
+    <html lang="en">
+      <body>
+        <DefaultLayout children={children} />
+      </body>
+    </html>
+  );
 }
