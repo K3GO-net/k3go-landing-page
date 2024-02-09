@@ -1,3 +1,5 @@
+"use client";
+
 import { GroupLine } from "@/src/assets/icon/GroupLine";
 
 export const Community = () => {

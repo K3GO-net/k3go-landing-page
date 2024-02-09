@@ -1,3 +1,5 @@
+"use client";
+
 import { NFTIcons, NFTIcons2 } from "@/src/assets/icon/NFTICons";
 import { Google } from "@/src/assets/icon/Google";
 import { Twitter } from "@/src/assets/icon/Twitter";

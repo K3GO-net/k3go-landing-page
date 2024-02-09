@@ -1,3 +1,5 @@
+"use client";
+
 import Bird from "@/src/assets/images/bird.png";
 
 export const Introduction = () => {
