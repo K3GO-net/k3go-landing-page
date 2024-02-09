@@ -7,7 +7,7 @@ import { Youtube } from "@/src/assets/icon/Youtube";
 
 export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="bg-black">
+    <div className="bg-black font-exo">
       <header className="pt-[30px] container">
         <header className="flex items-center justify-between">
           <div className="flex items-center gap-x-4">

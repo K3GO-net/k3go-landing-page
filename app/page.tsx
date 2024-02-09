@@ -1,7 +1,14 @@
 import Image from "next/image";
+import { Introduction } from "@/src/sections/Introduction";
+import { ProjectMarketers } from "@/src/sections/project-marketers";
+import { Community } from "@/src/sections/Community";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <div className="mt-[100px]">
+      <Introduction />
+      <ProjectMarketers />
+      <Community />
+    </div>
   );
 }
