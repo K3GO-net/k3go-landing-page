@@ -10,7 +10,7 @@ import { Youtube } from "@/src/assets/icon/Youtube";
 export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="bg-black font-exo">
-      <header className="pt-[30px] container">
+      <div className="pt-[30px] container">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-x-4">
             <NFTIcons />
@@ -20,9 +20,9 @@ export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
             Join Early Access
           </button>
         </div>
-      </header>
+      </div>
       <div>{children}</div>
-      <footer>
+      <div>
         <div className="container flex justify-between py-[60px] text-white">
           <div>
             <div className="flex gap-x-3 items-center">
@@ -70,7 +70,7 @@ export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
         <div className="bg-primary text-center py-[14px] text-[18px] font-medium">
           © 2024 KOL3 @ All Rights Reserved
         </div>
-      </footer>
+      </div>
     </div>
   );
 };
