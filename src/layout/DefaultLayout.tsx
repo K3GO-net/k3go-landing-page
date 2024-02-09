@@ -11,7 +11,7 @@ export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="bg-black font-exo">
       <header className="pt-[30px] container">
-        <header className="flex items-center justify-between">
+        <div className="flex items-center justify-between">
           <div className="flex items-center gap-x-4">
             <NFTIcons />
             <div className="text-[23px] font-semibold text-white">KOL3</div>
@@ -19,7 +19,7 @@ export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
           <button className="bg-primary py-[15px] px-[30px] rounded-full text-[16px] leading-5 font-bold">
             Join Early Access
           </button>
-        </header>
+        </div>
       </header>
       <div>{children}</div>
       <footer>
