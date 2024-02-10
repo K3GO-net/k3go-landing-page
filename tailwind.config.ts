@@ -18,7 +18,7 @@ const config: Config = {
         exo: ["'Exo 2'", "sans-serif"],
       },
       colors: {
-        primary: "#D3F85A",
+        primary: "#FCFC03",
       },
     },
     container: {

@@ -28,16 +28,13 @@ export const Introduction = () => {
           </div>
         </div>
         <div className="mt-[132px] flex gap-x-5">
-          <button className="py-5 px-[42px] bg-primary border-transparent border text-[20px] font-medium text-black rounded-full">
+          <button className="py-5 px-[42px] bg-primary border-transparent border text-[20px] font-medium text-black rounded-tl-[36px] rounded-br-[36px] backdrop-blur-[24px]">
             Join Early Access
-          </button>
-          <button className="py-5 px-[42px] bg-transparent border-primary border text-[20px] font-medium rounded-full">
-            Explore More
           </button>
         </div>
       </div>
       <div className="w-1/2 relative">
-        <div className="absolute top-0 w-full aspect-square rounded-full bg-white/5 flex items-center justify-center">
+        <div className="absolute top-0 w-full aspect-square rounded-full bg-white/5 flex items-center justify-center z-20">
           <img className="absolute top-0" src={Bird.src} />
         </div>
       </div>

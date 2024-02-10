@@ -9,7 +9,38 @@ import { Youtube } from "@/src/assets/icon/Youtube";
 
 export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="bg-black font-exo">
+    <div className="font-exo relative">
+      <div
+        style={{
+          width: "100%",
+          background: "linear-gradient(to bottom left, #000, #123456)",
+          backgroundAttachment: "fixed",
+          overflow: "hidden",
+        }}
+        className="w-full h-full bg-center absolute top-0 z-[-2]"
+      ></div>
+      <div
+        style={{
+          position: "absolute",
+          width: 650,
+          height: 650,
+          top: 0,
+          right: 0,
+          zIndex: -1,
+        }}
+        className="bg-[url('/background/shape1.png')] bg-center bg-cover"
+      />
+      <div
+        style={{
+          position: "absolute",
+          width: 650,
+          height: 650,
+          bottom: 50,
+          left: 0,
+          zIndex: -1,
+        }}
+        className="bg-[url('/background/shape2.png')] bg-cover bg-no-repeat"
+      />
       <div className="pt-[30px] container">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-x-4">
