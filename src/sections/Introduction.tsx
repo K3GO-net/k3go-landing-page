@@ -1,6 +1,6 @@
 "use client";
 
-import Bird from "@/src/assets/images/bird.png";
+import Cone02 from "@/src/assets/images/cone02.png";
 
 export const Introduction = () => {
   return (
@@ -35,7 +35,7 @@ export const Introduction = () => {
       </div>
       <div className="w-1/2 relative">
         <div className="absolute top-0 w-full aspect-square rounded-full bg-white/5 flex items-center justify-center z-20">
-          <img className="absolute top-0" src={Bird.src} />
+          <img className="absolute top-0 w-full h-full" src={Cone02.src} />
         </div>
       </div>
     </div>
