@@ -4,7 +4,7 @@ import Cone05 from "@/src/assets/images/cone05.png";
 
 export const KeyOpinionLeaders = () => {
   return (
-    <div className="container grid grid-cols-2 gap-x-6 my-[64px] items-center">
+    <div className="container grid md:grid-cols-2 grid-cols-1 gap-x-6 my-[64px] items-center">
       <div className="text-white">
         <div className="text-[50px] font-semibold">
           Key Opinion <span className="text-primary">Leaders</span>

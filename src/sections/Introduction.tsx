@@ -1,43 +1,55 @@
 "use client";
 
-import Cone02 from "@/src/assets/images/cone02.png";
+import Cone03 from "@/src/assets/images/cone03.png";
+import Cone04 from "@/src/assets/images/cone04.png";
+import useInView from "@/src/hooks/useInView";
+import { useRouter } from "next/navigation";
 
 export const Introduction = () => {
+  const { isInView, ref } = useInView();
+  const router = useRouter();
   return (
-    <div className="container flex justify-between gap-x-14">
-      <div className="w-1/2 text-white">
-        <div className="text-[60px] font-semibold leading-[75px]">
-          KOL3 - The Web3 influence marketplace
+    <>
+      <div className="flex items-center gap-x-14 relative min-h-[80dvh]">
+        <div className="absolute top-0 left-0 md:flex hidden">
+          <img src={Cone03.src} width={436} height={436} />
         </div>
-        <div className="mt-[30px] text-[20px] font-light">
-          Amplify and reach like never before <br />
-          The collaborative economy redifined with true SocialFi
+        <div className="absolute bottom-0 right-0 md:flex hidden">
+          <img src={Cone04.src} width={436} height={436} />
         </div>
-        <div className="mt-14 flex justify-between">
-          <div>
-            <div className="font-bold text-[48px]">1K+</div>
-            <div className="mt-5 text-[20px] font-medium">Influence</div>
+        <div className="w-full text-white container">
+          <div className="text-primary font-semibold text-[60px] text-center">
+            KOL3
           </div>
-          <div>
-            <div className="font-bold text-[48px]">10K+</div>
-            <div className="mt-5 text-[20px] font-medium">Users</div>
+          <div className="text-[60px] font-semibold leading-[75px] text-center">
+            KOL3 - The Web3 Influence <br /> Marketplace
           </div>
-          <div>
-            <div className="font-bold text-[48px]">50K+</div>
-            <div className="mt-5 text-[20px] font-medium">Projects</div>
+          <div className="mt-[30px] text-[20px] font-light text-center">
+            Amplify and reach like never before <br />
+            The collaborative economy redifined with true SocialFi
           </div>
-        </div>
-        <div className="mt-[132px] flex gap-x-5">
-          <button className="py-5 px-[42px] bg-primary border-transparent border text-[20px] font-medium text-black rounded-tl-[36px] rounded-br-[36px] backdrop-blur-[24px]">
-            Join Early Access
-          </button>
+          <div ref={ref} className="mt-[30px] flex justify-center gap-x-5">
+            <button
+              onClick={() => router.push("/early-access")}
+              className="py-5 px-[42px] bg-primary border-transparent border text-[20px] font-medium text-black rounded-tl-[36px] rounded-br-[36px] shadow-md shadow-primary/50"
+            >
+              Join Early Access
+            </button>
+          </div>
         </div>
       </div>
-      <div className="w-1/2 relative">
-        <div className="absolute top-0 w-full aspect-square rounded-full bg-white/5 flex items-center justify-center z-20">
-          <img className="absolute top-0 w-full h-full" src={Cone02.src} />
+      {!isInView && (
+        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 text-white">
+          <div className="flex justify-center p-2 bg-primary/30 rounded-full">
+            <button
+              onClick={() => router.push("/early-access")}
+              className="bg-primary md:px-[42px] px-5 py-3 border-transparent border text-[20px] font-medium text-black rounded-full shadow-md shadow-primary/50"
+            >
+              Join Early Access
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };

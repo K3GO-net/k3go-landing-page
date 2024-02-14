@@ -4,7 +4,7 @@ import Cone01 from "@/src/assets/images/cone01.png";
 
 export const ProjectMarketers = () => {
   return (
-    <div className="container grid grid-cols-2 gap-x-6 mt-[150px] items-center">
+    <div className="container grid md:grid-cols-2 grid-cols-1 gap-x-6 items-center">
       <div className="flex justify-start">
         <img src={Cone01.src} />
       </div>

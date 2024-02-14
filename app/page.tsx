@@ -7,7 +7,7 @@ import { KeyOpinionLeaders } from "@/src/sections/key-opinion-leaders";
 
 export default function Home() {
   return (
-    <div className="mt-[100px]">
+    <div className="">
       <Introduction />
       <ProjectMarketers />
       <KeyOpinionLeaders />
