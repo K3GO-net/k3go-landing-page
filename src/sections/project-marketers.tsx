@@ -14,7 +14,7 @@ export const ProjectMarketers = () => {
         </div>
         <div className="font-light text-[20px]">
           This is your home, your space. Connect and collab with Web3 projects
-          that share your values. K3 has you covered with secure and timely
+          that share your values. K3GO has you covered with secure and timely
           transactions. Make your community participants of your success. With
           revenue share, you grow, and they grow with you.
         </div>

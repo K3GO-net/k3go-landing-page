@@ -12,8 +12,8 @@ export const KeyOpinionLeaders = () => {
         <div className="font-light text-[20px]">
           Amplify and reach like never before. Easily discover and collaborate
           with verified KOLs that share your ethos. Connect with worldwide
-          communities with ease. Trust is guaranteed through K3's escrow payment
-          and dispute resolution system.
+          communities with ease. Trust is guaranteed through K3GO's escrow
+          payment and dispute resolution system.
         </div>
       </div>
       <div className="flex justify-end">

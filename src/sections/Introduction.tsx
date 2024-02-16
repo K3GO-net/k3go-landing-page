@@ -36,11 +36,11 @@ export const Introduction = () => {
   return (
     <>
       <div className="flex items-center gap-x-14 relative min-h-[80dvh]">
-        <div className="absolute top-0 left-0 md:flex hidden">
-          <img src={Cone03.src} width={436} height={436} />
+        <div className="absolute top-0 left-0 md:flex hidden 2xl:w-[436px] xl:w-[350px] md:w-[200px] aspect-square">
+          <img className="w-full h-full" src={Cone03.src} />
         </div>
-        <div className="absolute bottom-0 right-0 md:flex hidden">
-          <img src={Cone04.src} width={436} height={436} />
+        <div className="absolute bottom-0 right-0 md:flex hidden 2xl:w-[436px] xl:w-[350px] md:w-[200px] aspect-square">
+          <img className="w-full h-full" src={Cone04.src} />
         </div>
         <div className="w-full text-white container">
           <div className="flex justify-center">

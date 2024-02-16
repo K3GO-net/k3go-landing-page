@@ -13,7 +13,7 @@ export const Community2 = () => {
           <span className="text-primary">Community</span>
         </div>
         <div className="font-light text-[20px]">
-          Engage in the shared economy with K3's true{" "}
+          Engage in the shared economy with K3GO's true{" "}
           <span className="font-semibold">socialFi</span>. Endorse who you
           follow, discover emerging experts, and reap the benefits of backing
           established profiles. By getting Keys from your preferred KOL's, you
