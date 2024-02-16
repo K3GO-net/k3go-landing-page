@@ -1,7 +1,9 @@
 "use client";
 
 import "./globals.css";
+import "@rainbow-me/rainbowkit/styles.css";
 import { DefaultLayout } from "@/src/layout/DefaultLayout";
+import { Provider } from "@/src/provider";
 
 export default function RootLayout({
   children,
@@ -11,7 +13,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <DefaultLayout children={children} />
+        <Provider>
+          <DefaultLayout children={children} />
+        </Provider>
       </body>
     </html>
   );

@@ -13,11 +13,10 @@ export const ProjectMarketers = () => {
           <span className="text-primary">Project</span> Marketers
         </div>
         <div className="font-light text-[20px]">
-          Amplify your projects growth within target communities efficiently.
-          KOL3 serves as a peer-to-peer marketplace, streamlining the discovery,
-          connection, and collaboration process with verified Key Opinion
-          Leaders. Trust and ease are guaranteed through our escrow payment and
-          dispute resolution system.
+          This is your home, your space. Connect and collab with Web3 projects
+          that share your values. K3 has you covered with secure and timely
+          transactions. Make your community participants of your success. With
+          revenue share, you grow, and they grow with you.
         </div>
       </div>
     </div>

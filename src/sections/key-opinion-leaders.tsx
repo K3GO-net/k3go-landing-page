@@ -10,11 +10,10 @@ export const KeyOpinionLeaders = () => {
           Key Opinion <span className="text-primary">Leaders</span>
         </div>
         <div className="font-light text-[20px]">
-          Enhance visibility for your services across global web3 projects,
-          optimizing collaboration and revenue. KOL3 ensures secure transactions
-          for timely payments. <br /> Monetize your community base by selling
-          keys and sharing gig fees, incentivizing your followers to amplify
-          collaborations.
+          Amplify and reach like never before. Easily discover and collaborate
+          with verified KOLs that share your ethos. Connect with worldwide
+          communities with ease. Trust is guaranteed through K3's escrow payment
+          and dispute resolution system.
         </div>
       </div>
       <div className="flex justify-end">

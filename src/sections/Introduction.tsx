@@ -2,11 +2,36 @@
 
 import Cone03 from "@/src/assets/images/cone03.png";
 import Cone04 from "@/src/assets/images/cone04.png";
+import LogoGlow from "@/src/assets/images/logo.png";
 import useInView from "@/src/hooks/useInView";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export const Introduction = () => {
   const { isInView, ref } = useInView();
+  const [isAtBottom, setIsAtBottom] = useState(false);
+
+  const checkScrollBottom = () => {
+    // For window scrolling
+    const scrollTop = document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+    const height = document.documentElement.scrollHeight;
+
+    // Check if the user is at the bottom of the page
+    if (windowHeight + scrollTop === height) {
+      setIsAtBottom(true);
+    } else {
+      setIsAtBottom(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollBottom);
+
+    return () => {
+      window.removeEventListener("scroll", checkScrollBottom);
+    };
+  }, []);
   const router = useRouter();
   return (
     <>
@@ -18,15 +43,15 @@ export const Introduction = () => {
           <img src={Cone04.src} width={436} height={436} />
         </div>
         <div className="w-full text-white container">
-          <div className="text-primary font-semibold text-[60px] text-center">
-            KOL3
+          <div className="flex justify-center">
+            <img src={LogoGlow.src} alt="main logo" width={200} height={200} />
           </div>
           <div className="text-[60px] font-semibold leading-[75px] text-center">
-            KOL3 - The Web3 Influence <br /> Marketplace
+            Join K3GO, home of the KOL.
           </div>
           <div className="mt-[30px] text-[20px] font-light text-center">
-            Amplify and reach like never before <br />
-            The collaborative economy redifined with true SocialFi
+            Collab with projects you believe in. Share success with your <br />
+            community. Grow like never before.
           </div>
           <div ref={ref} className="mt-[30px] flex justify-center gap-x-5">
             <button
@@ -38,8 +63,8 @@ export const Introduction = () => {
           </div>
         </div>
       </div>
-      {!isInView && (
-        <div className="fixed md:bottom-8 bottom-5 left-1/2 -translate-x-1/2 text-white">
+      {!isInView && !isAtBottom && (
+        <div className="fixed md:bottom-16 bottom-5 left-1/2 -translate-x-1/2 text-white">
           <div className="flex justify-center p-2 bg-primary/30 rounded-full">
             <button
               onClick={() => router.push("/early-access")}

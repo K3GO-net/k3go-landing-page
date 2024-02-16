@@ -4,7 +4,7 @@ import { Head } from "next/document";
 const Page = () => {
   return (
     <>
-      <title>Early Access - KOL3</title>
+      <title>Early Access - K3GO</title>
       <EarlyAccess />
     </>
   );
