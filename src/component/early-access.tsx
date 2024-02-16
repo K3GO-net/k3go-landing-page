@@ -45,6 +45,9 @@ export const EarlyAccess = () => {
           <div className="text-center text-[60px] font-semibold text-white">
             Earn Point
           </div>
+          <div className="text-[18px] italic text-center font-light">
+            (Coming soon, stay tuned)
+          </div>
           <div className="mt-20 md:px-20 px-4 grid gap-y-10">
             <div className="md:flex grid justify-between items-center">
               <div className="grid">
