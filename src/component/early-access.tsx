@@ -19,6 +19,14 @@ export const EarlyAccess = () => {
       return newValue.join("");
     });
   };
+
+  const handleEnableNotification = () => {
+    if (!("Notification" in window)) {
+      alert("This browser does not support desktop notification");
+    } else if (Notification.permission !== 'granted') {
+      Notification.requestPermission()
+    }
+  }
   return (
     <div className="h-screen flex items-center container text-white">
       <div className="w-full">
@@ -92,7 +100,7 @@ export const EarlyAccess = () => {
               <div className="font-medium text-[24px]">
                 Turn on notifications
               </div>
-              <button className="py-3 w-[220px] transition hover:translate-x-1 hover:-translate-y-1 font-medium text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] shadow-md shadow-primary/50">
+              <button onClick={() => handleEnableNotification()} className="py-3 w-[220px] transition hover:translate-x-1 hover:-translate-y-1 font-medium text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] shadow-md shadow-primary/50">
                 VERIFY
               </button>
             </div>
