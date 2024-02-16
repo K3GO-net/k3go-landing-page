@@ -9,7 +9,7 @@ import { Footer } from "@/src/sections/Footer";
 
 export const LandingPage = () => {
   return (
-    <div className="">
+    <div className="md:pb-[100px] pb-[50px]">
       <Introduction />
       <ProjectMarketers />
       <KeyOpinionLeaders />

@@ -45,11 +45,12 @@ export const EarlyAccess = () => {
           <div className="text-center text-[60px] font-semibold text-white">
             Earn Point
           </div>
-          <div className="mt-20 px-20 grid gap-y-10">
-            <div className="flex justify-between items-center">
+          <div className="mt-20 md:px-20 px-4 grid gap-y-10">
+            <div className="md:flex grid justify-between items-center">
               <div className="grid">
-                <div className="text-[16px] font-medium">Invite Code</div>
-                <div className="font-medium text-[24px]">Claim rewards</div>
+                <div className="font-medium text-[24px]">
+                  Input Invitation Code
+                </div>
               </div>
               <div className="flex items-center gap-x-4">
                 <input
@@ -57,46 +58,46 @@ export const EarlyAccess = () => {
                   value={inviteCode?.split("")[0] || ""}
                   onChange={(e) => handleChangeCode(e, 0)}
                   maxLength={1}
-                  className="bg-transparent py-3 font-medium text-center text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] outline-none w-[60px]"
+                  className="bg-transparent md:py-3 py-2 font-medium text-center md:text-[16px] text-[14px] border border-primary/50 md:rounded-tl-[24px] rounded-tl-[16px] md:rounded-br-[24px] rounded-br-[16px] outline-none md:w-[60px] w-[40px]"
                 ></input>
                 <input
                   id="input-2"
                   value={inviteCode?.split("")[1] || ""}
                   onChange={(e) => handleChangeCode(e, 1)}
                   maxLength={1}
-                  className="bg-transparent py-3 font-medium text-center text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] outline-none w-[60px]"
+                  className="bg-transparent md:py-3 py-2 font-medium text-center md:text-[16px] text-[14px] border border-primary/50 md:rounded-tl-[24px] rounded-tl-[16px] md:rounded-br-[24px] rounded-br-[16px] outline-none md:w-[60px] w-[40px]"
                 ></input>
                 <input
                   id="input-3"
                   value={inviteCode?.split("")[2] || ""}
                   onChange={(e) => handleChangeCode(e, 2)}
                   maxLength={1}
-                  className="bg-transparent py-3 font-medium text-center text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] outline-none w-[60px]"
+                  className="bg-transparent md:py-3 py-2 font-medium text-center md:text-[16px] text-[14px] border border-primary/50 md:rounded-tl-[24px] rounded-tl-[16px] md:rounded-br-[24px] rounded-br-[16px] outline-none md:w-[60px] w-[40px]"
                 ></input>
                 <input
                   id="input-4"
                   value={inviteCode?.split("")[3] || ""}
                   onChange={(e) => handleChangeCode(e, 3)}
                   maxLength={1}
-                  className="bg-transparent py-3 font-medium text-center text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] outline-none w-[60px]"
+                  className="bg-transparent md:py-3 py-2 font-medium text-center md:text-[16px] text-[14px] border border-primary/50 md:rounded-tl-[24px] rounded-tl-[16px] md:rounded-br-[24px] rounded-br-[16px] outline-none md:w-[60px] w-[40px]"
                 ></input>
                 <input
                   id="input-5"
                   value={inviteCode?.split("")[4] || ""}
                   onChange={(e) => handleChangeCode(e, 4)}
                   maxLength={1}
-                  className="bg-transparent py-3 font-medium text-center text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] outline-none w-[60px]"
+                  className="bg-transparent md:py-3 py-2 font-medium text-center md:text-[16px] text-[14px] border border-primary/50 md:rounded-tl-[24px] rounded-tl-[16px] md:rounded-br-[24px] rounded-br-[16px] outline-none md:w-[60px] w-[40px]"
                 ></input>
                 <input
                   id="input-6"
                   value={inviteCode?.split("")[5] || ""}
                   onChange={(e) => handleChangeCode(e, 5)}
                   maxLength={1}
-                  className="bg-transparent py-3 font-medium text-center text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] outline-none w-[60px]"
+                  className="bg-transparent md:py-3 py-2 font-medium text-center md:text-[16px] text-[14px] border border-primary/50 md:rounded-tl-[24px] rounded-tl-[16px] md:rounded-br-[24px] rounded-br-[16px] outline-none md:w-[60px] w-[40px]"
                 ></input>
               </div>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="md:flex grid justify-between items-center">
               <div className="font-medium text-[24px]">Follow Twitter</div>
               <TwitterShareButton
                 onClick={() => setIsShared(true)}
@@ -107,7 +108,7 @@ export const EarlyAccess = () => {
                 </div>
               </TwitterShareButton>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="md:flex grid justify-between items-center">
               <div className="font-medium text-[24px]">
                 Turn on notifications
               </div>
@@ -118,7 +119,7 @@ export const EarlyAccess = () => {
                 VERIFY
               </button>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="md:flex grid justify-between items-center">
               <div className="font-medium text-[24px]">Connect Wallet</div>
               <ButtonConnectCustom />
             </div>
