@@ -1,4 +1,4 @@
-import { EarlyAccess } from "@/src/pages/early-access";
+import { EarlyAccess } from "@/src/component/early-access";
 import { Head } from "next/document";
 
 const Page = () => {

@@ -39,11 +39,11 @@ export const Introduction = () => {
         </div>
       </div>
       {!isInView && (
-        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 text-white">
+        <div className="fixed md:bottom-8 bottom-5 left-1/2 -translate-x-1/2 text-white">
           <div className="flex justify-center p-2 bg-primary/30 rounded-full">
             <button
               onClick={() => router.push("/early-access")}
-              className="bg-primary md:px-[42px] px-5 py-3 border-transparent border text-[20px] font-medium text-black rounded-full shadow-md shadow-primary/50"
+              className="bg-primary md:px-[42px] px-3 md:py-3 py-2 border-transparent border md:text-[20px] text-[16px] font-medium text-black rounded-full shadow-md shadow-primary/50"
             >
               Join Early Access
             </button>

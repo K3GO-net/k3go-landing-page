@@ -7,7 +7,7 @@ import { TwitterShareButton } from "react-share";
 
 export const EarlyAccess = () => {
   const router = useRouter();
-  const [inviteCode, setInviteCode] = useState("");
+  const [inviteCode, setInviteCode] = useState("AAAAAA");
   const [isShared, setIsShared] = useState(false);
   const handleChangeCode = (
     e: ChangeEvent<HTMLInputElement>,
