@@ -34,7 +34,7 @@ export const EarlyAccess = () => {
   };
 
   const openTwitter = () => {
-    window.open("https://twitter.com", "_blank");
+    window.open("https://x.com/K3GOnet?t=988o1MVUpWtN68AY36Q8eg&s=09", "_blank")
     setIsShared(true);
   };
   return (
