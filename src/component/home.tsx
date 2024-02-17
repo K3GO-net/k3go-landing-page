@@ -14,7 +14,7 @@ export const LandingPage = () => {
       <ProjectMarketers />
       <KeyOpinionLeaders />
       <Community2 />
-      <Community />
+      {/*<Community />*/}
       <Footer />
     </div>
   );
