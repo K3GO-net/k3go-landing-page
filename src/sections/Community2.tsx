@@ -4,7 +4,7 @@ import Cone02 from "@/src/assets/images/cone02.png";
 
 export const Community2 = () => {
   const openTwitter = () => {
-    window.open("https://twitter.com", "_blank");
+    window.open("https://x.com/K3GOnet?t=988o1MVUpWtN68AY36Q8eg&s=09", "_blank")
   };
   return (
     <>
