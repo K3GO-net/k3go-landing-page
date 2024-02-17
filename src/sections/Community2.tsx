@@ -3,6 +3,9 @@
 import Cone02 from "@/src/assets/images/cone02.png";
 
 export const Community2 = () => {
+  const openTwitter = () => {
+    window.open("https://twitter.com", "_blank");
+  };
   return (
     <>
       <div className="container grid md:grid-cols-2 grid-cols-1 gap-x-6 items-center">
@@ -20,7 +23,10 @@ export const Community2 = () => {
             established profiles. By getting Keys from your preferred KOL's, you
             can trade and unlock their collab revenue share.
           </div>
-          <button className="py-3 md:px-[32px] transition hover:translate-x-1 hover:-translate-y-1 font-medium text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] shadow-md shadow-primary/50 text-white my-6 w-full">
+          <button
+            onClick={openTwitter}
+            className="py-3 md:px-[32px] transition hover:translate-x-1 hover:-translate-y-1 font-medium text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] shadow-md shadow-primary/50 text-white my-6 w-full"
+          >
             X.COM
           </button>
         </div>

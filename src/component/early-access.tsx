@@ -32,6 +32,11 @@ export const EarlyAccess = () => {
       Notification.requestPermission();
     }
   };
+
+  const openTwitter = () => {
+    window.open("https://twitter.com", "_blank");
+    setIsShared(true);
+  };
   return (
     <div className="h-screen flex items-center container text-white">
       <div className="w-full">
@@ -102,11 +107,12 @@ export const EarlyAccess = () => {
             </div>
             <div className="md:flex grid justify-between items-center">
               <div className="font-medium text-[24px]">Follow Twitter</div>
-              <TwitterShareButton onClick={() => setIsShared(true)} url={"/"}>
-                <div className="py-3 w-[220px] transition hover:translate-x-1 hover:-translate-y-1 font-medium text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] shadow-md shadow-primary/50">
-                  {!isShared ? "GO TO TWITTER" : "VERIFY"}
-                </div>
-              </TwitterShareButton>
+              <button
+                onClick={openTwitter}
+                className="py-3 w-[220px] transition hover:translate-x-1 hover:-translate-y-1 font-medium text-[16px] border border-primary/50 rounded-tl-[24px] rounded-br-[24px] shadow-md shadow-primary/50"
+              >
+                {!isShared ? "GO TO TWITTER" : "VERIFY"}
+              </button>
             </div>
             <div className="md:flex grid justify-between items-center">
               <div className="font-medium text-[24px]">
